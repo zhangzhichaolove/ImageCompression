@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/native_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="compressNative"
+        android:text="本地压缩"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/system_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="compressSystem"
+        android:text="系统压缩"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/native_tv"
+        app:layout_constraintRight_toRightOf="@id/native_tv"
+        app:layout_constraintTop_toBottomOf="@id/native_tv" />
+
+</android.support.constraint.ConstraintLayout>
